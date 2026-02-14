@@ -28,10 +28,10 @@ const createBot = (): void => {
 
 
 	bot.once('error', error => {
-		console.error(`AFKBot got an error: ${error}`);
+		console.error(`ButlerMC got an error: ${error}`);
 	});
 	bot.once('kicked', rawResponse => {
-		console.error(`\n\nAFKbot is disconnected: ${rawResponse}`);
+		console.error(`\n\nButlerMC had disconnected: ${rawResponse}`);
 	});
 	bot.once('end', () => void reconnect());
 
